@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('./fonts/Lato/Lato-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #AC1E1E; /* Dark red background */
+    color: white; /* White text for contrast */
+    font-family: 'Lato-Black', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Name-Title Container */
+.name-title-container {
+    display: flex;
+    flex-direction: column; /* Stack the name and title */
+    align-items: flex-start; /* Ensure left alignment */
+}
+
+/* Name styles */
+.name {
+    font-size: 96px;
+    margin: 0;
+    padding: 0; /* Remove any padding */
+}
+
+/* Title styles */
+.title {
+    font-size: 24px; /* Font size for the title */
+    margin-top: 10px; /* Add some spacing below the name */
+    padding: 0; /* Remove any padding */
+    padding-left: 5px;
+}
+
+/* Header container styles */
+.header-container {
+    display: flex; /* Spread out the name/title and navigation */
+    align-items: flex-start;
+    padding: 20px 40px; /* Add padding for breathing room */
+}
+
+/* Navigation styles */
+.navigation {
+    margin-left: auto;
+    padding-top: 18px;
+    padding-right: 10px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove any padding */
+}
+
+.navigation li {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 25px;
+    transition: border 0.3s ease-in-out;
+}
+
+.navigation li:hover {
+    border: 1px dotted; /* Underline effect on hover */
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+    column-gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.main-box {
+    border: white solid;
+    border-radius: 50px;
+    width: 500px;
+    height: 300px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .name {
+        font-size: 48px; /* Adjusted for smaller screens */
+    }
+
+    .title {
+        font-size: 18px; /* Adjusted for smaller screens */
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px; /* Adjust spacing for vertical layout */
+    }
+
+    .navigation li {
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}

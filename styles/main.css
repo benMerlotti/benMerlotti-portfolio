@@ -1,0 +1,38 @@
+/* Define the font */
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('./fonts/Lato/Lato-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.body {
+    background-color: #AC1E1E;
+    color: white;
+    font-family: 'Lato-Black', sans-serif;
+}
+
+.name {
+    font-size: 96px;
+    margin-top: 0px;
+}
+
+.title {
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    margin-top: 0px;
+}
+
+.navigation ul {
+    list-style: none;
+}
